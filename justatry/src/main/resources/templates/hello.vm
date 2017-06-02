@@ -1,0 +1,18 @@
+<table id="example2" class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>名称</th>
+        <th>内容</th>
+    </tr>
+    </thead>
+    <tbody>
+        #foreach($item in $data)
+        <tr>
+            <td>$item.id</td>
+            <td>$item.name</td>
+            <td>$item.content</td>
+        </tr>
+        #end
+    </tbody>
+</table>
