@@ -1,0 +1,2 @@
+# sringboot-elasticSearch
+这只是一个springboot+es的框架 在很短的时间内集成了springmvc以及springdatajpa与mybatis的切换，代码简单粗暴，只是自己的一次小实践，只完成了同步数据库数据与检索的功能。
