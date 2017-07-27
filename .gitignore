@@ -1,139 +1,49 @@
-[data:{
-  "reqtoken": "",
-  "runtime": "00:17",
-  "from_station_name": "北京东",
-  "ordernumber": "E849129188",
-  "checi": "Y521",
-  "code": 100,
-  "msg": "处理或操作成功",
-  "from_station_code": "BOP",
-  "orderamount": "8.00",
-  "to_station_name": "通州西",
-  "arrive_time": "2017-08-21 11:07:00",
-  "passengers": [
-    {
-      "reason": 0,
-      "piaotype": "1",
-      "passporttypeseidname": "二代身份证",
-      "passporttypeseid": "1",
-      "zwname": "硬座",
-      "price": "8.0",
-      "piaotypename": "成人票",
-      "ticket_no": "E8491291881110002",
-      "passengersename": "卢世欣",
-      "zwcode": "1",
-      "passportseno": "210803198812062011",
-      "passengerid": "8273",
-      "cxin": "11车厢,002座"
-    }
-  ],
-  "to_station_code": "TAP",
-  "accountlist": [
-    {
-      "accountstatusid": 5,
-      "accountstatusname": "其他",
-      "accountname": "0"
-    }
-  ],
-  "train_date": "2017-08-21",
-  "ordersuccess": true,
-  "transactionid": "T170724926AEEAA0E1CC0427D09F5A046F868605D77",
-  "start_time": "2017-08-21 10:50:00",
-  "orderid": "20170724151841128149_958",
-  "success": true
-}, action:bookingCallback, format:null, controller:trainHtCallback]
+﻿# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-[sign:f3c310c49aa2581d7b7207df28f7b1c6, transactionid:T170724926AEEAA0E1CC0427D09F5A046F868605D77, reqtime:20170724151759055, isSuccess:Y, orderid:20170724151841128149_958, action:bookedCallback, format:null, controller:trainHtCallback]
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
 
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
 
-http://api.beta.umicheng.com/umicheng/orderTrain/
-refund?orderId=20170724151841128149&passengerIds=8141&orderType=TRAIN_IN&token=f835466f6027823134c7dd9edf256b96
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
 
+# CMake
+cmake-build-debug/
 
-[data:{"timestamp":"1500885459","sign":"aaf20a73aad299e7d4b74a441da5d835","reqtoken":"0000","returntickets":[{"returnsuccess":true,"returnfailid":"","passengername":"卢世欣","ticket_no":"E8491291881110002","returnmoney":"8","returnfailmsg":"","passportseno":"210803198812062011","passporttypeseid":"1","returntime":"2017-07-24 16:37:39"}],"apiorderid":"20170724151841128149_958","token":"1500885459822","returnmoney":"8","trainorderid":"E849129188","returnmsg":"","returnstate":true,"returntype":"1"}, action:refundCallback, format:null, controller:trainHtCallback]
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
 
+## File-based project format:
+*.iws
 
+## Plugin-specific files:
 
-[data:{"timestamp":"1500885459","sign":"aaf20a73aad299e7d4b74a441da5d835","reqtoken":"0000","returntickets":[{"returnsuccess":true,"returnfailid":"","passengername":"卢世欣","ticket_no":"E8491291881110002","returnmoney":"8","returnfailmsg":"","passportseno":"210803198812062011","passporttypeseid":"1","returntime":"2017-07-24 16:37:39"}],"apiorderid":"20170724151841128149_958","token":"1500885459822","returnmoney":"8","trainorderid":"E849129188","returnmsg":"","returnstate":true,"returntype":"1"}, action:refundCallback, format:null, controller:trainHtCallback]
+# IntelliJ
+out/
 
+# mpeltonen/sbt-idea plugin
+.idea_modules/
 
+# JIRA plugin
+atlassian-ide-plugin.xml
 
+# Cursive Clojure plugin
+.idea/replstate.xml
 
-
-http://localhost:8080/umc-portal/trainHtCallback/refundCallback
-http://api.beta.umicheng.com/umicheng/trainHtCallback/refundCallback?data={
-  "timestamp": "1500885459",
-  "sign": "aaf20a73aad299e7d4b74a441da5d835",
-  "reqtoken": "0000",
-  "returntickets": [
-    {
-      "returnsuccess": true,
-      "returnfailid": "",
-      "passengername": "卢世欣",
-      "ticket_no": "E8491291881110002",
-      "returnmoney": "8",
-      "returnfailmsg": "",
-      "passportseno": "210803198812062011",
-      "passporttypeseid": "1",
-      "returntime": "2017-07-24 16:37:39"
-    }
-  ],
-  "apiorderid": "20170724151841128149_958",
-  "token": "1500885459822",
-  "returnmoney": "8",
-  "trainorderid": "E849129188",
-  "returnmsg": "",
-  "returnstate": true,
-  "returntype": "1"
-}
-
-模仿退票的回调
-http://localhost:8080/umc-portal/trainHtCallback/refundCallback?data={
-  "timestamp": "1501030428",
-  "sign": "715e76f41f96b33c27942b75913f1351",
-  "reqtoken": "99999999999",
-  "returntickets": [
-    {
-      "returnsuccess": true,
-      "returnfailid": "",
-      "passengername": "王博",
-      "ticket_no": "EC893535212070004",
-      "returnmoney": "6",
-      "returnfailmsg": "",
-      "passportseno": "210711199307114414",
-      "passporttypeseid": "1",
-      "returntime": "2017-07-26 08:53:48"
-    }
-  ],
-  "apiorderid": "20170725171904128902_998",
-  "token": "1501030428380",
-  "returnmoney": "6",
-  "changereqtoken": "99999999999",
-  "trainorderid": "EC89353521",
-  "returnmsg": "",
-  "returnstate": true,
-  "returntype": "1"
-}"ticket_no" -> "EC893535212070004"
-
-{"fromstation":"北京东","orderDate":1500880463257,"ordernumber":"E849129188","checi":"Y521","code":"100","msg":"查询订单成功","arrivetime":"2017-08-21 11:07","tostation":"通州西","costtime":"00:17","ticketstatus":[{"orderItemId":"8273","idtype":"1","status":"已在线退票","idnumber":"210803198812062011","statusid":"4","zwname":"硬座","price":8,"outticketdetail":"","piaotypename":"成人","ticket_no":"E8491291881110002","passengersename":"卢世欣","zwcode":"1","cxin":"11车厢,002号"}],"ordertotalprice":8,"transactionid":"T170724926AEEAA0E1CC0427D09F5A046F868605D77","ticketPrice":8,"orderstatusname":"支付成功","orderid":"20170724151841128149_958","holdingSeatSuccessTime":8,"traintime":"2017-08-21 10:50","success":true,"cashchange":[]}
-
-[data:{"reqtoken":"","runtime":"00:18","from_station_name":"鸡西","ordernumber":"E955857209","checi":"4043","code":100,"msg":"处理或操作成功","from_station_code":"JXB","orderamount":"12.00","to_station_name":"鸡东","arrive_time":"2017-08-19 18:11:00","passengers":[{"reason":0,"piaotype":"1","passporttypeseidname":"二代身份证","passporttypeseid":"1","zwname":"硬座","price":"6.0","piaotypename":"成人票","ticket_no":"E9558572091103141","passengersename":"卢宏","zwcode":"1","passportseno":"210803196007022018","passengerid":"8388","cxin":"10车厢,无座"},{"reason":0,"piaotype":"1","passporttypeseidname":"二代身份证","passporttypeseid":"1","zwname":"硬座","price":"6.0","piaotypename":"成人票","ticket_no":"E9558572091103142","passengersename":"卢世欣","zwcode":"1","passportseno":"210803198812062011","passengerid":"8389","cxin":"10车厢,无座"}],"to_station_code":"JOB","accountlist":[{"accountstatusid":5,"accountstatusname":"其他","accountname":"0"}],"train_date":"2017-08-19","ordersuccess":true,"transactionid":"T170725BCDCE1B40D3D30455B0B84C009008DBD1FBD","start_time":"2017-08-19 17:53:00","orderid":"20170725155134128815_992","success":true}, action:bookingCallback, format:null, controller:trainHtCallback]
-
-[data:{"reqtoken":"","ordersuccess":false,"transactionid":"T17072549AC496A04796047DB0B8940474851B19B36","code":308,"orderid":"20170725154421128814_991","msg":"乘客身份信息未通过验证_订票失败卢宏210803166007022018","success":false,"orderamount":"0.00"}, action:bookingCallback, format:null, controller:trainHtCallback]
-
-http://localhost:8080/umc-portal/orderMain/detail?orderId=20170725154421128814&orderType=TRAIN_IN&token=f835466f6027823134c7dd9edf256b96
-
-[data:{"reqtoken":"","runtime":"00:18","from_station_name":"鸡东","ordernumber":"EC89353521","checi":"6224","code":100,"msg":"处理或操作成功","from_station_code":"JOB","orderamount":"1.00","to_station_name":"鸡西","arrive_time":"2017-07-29 16:00:00","passengers":[{"reason":0,"piaotype":"1","passporttypeseidname":"二代身份证","passporttypeseid":"1","zwname":"硬座","price":"1.0","piaotypename":"成人票","ticket_no":"EC893535211020011","passengersename":"王博","zwcode":"1","passportseno":"210711199307114414","passengerid":"8400","cxin":"02车厢,011座"}],"to_station_code":"JXB","accountlist":[{"accountstatusid":5,"accountstatusname":"其他","accountname":"0"}],"train_date":"2017-07-29","ordersuccess":true,"transactionid":"T1707257274D5870127E04D5E08DA309C5930D7145F","start_time":"2017-07-29 15:42:00","orderid":"20170725171904128902_998","success":true}, action:bookingCallback, format:null, controller:trainHtCallback]
-
-改签报文
-{"LoginUserName":"","LoginUserPassword":"","callbackurl":"http://api.beta.umicheng.com/umicheng/trainHtCallback/changingCallback","change_checi":"K7028","change_datetime":"2017-08-23 21:41:00","change_zwcode":"1","from_station_code":"","from_station_name":"鸡东","isTs":false,"isasync":"Y","method":"train_request_change","old_zwcode":"1","orderid":"20170725171904128902_998","ordernumber":"EC89353521","partnerid":"anjiezhilv","reqtime":"20170726084142","reqtoken":"99999999999","sign":"b86dce80c208611055edbfb1b97aefe1","ticketinfo":[{"old_ticket_no":"EC893535211020011","passengersename":"王博","passportseno":"210711199307114414","passporttypeseid":"1","piaotype":"1"}],"to_station_code":"","to_station_name":"鸡西","transactionid":"T1707257274D5870127E04D5E08DA309C5930D7145F","ts":false}
-
-[backjson:{"reqtoken":"99999999999","pricedifference":7,"newtickets":[{"zwname":"硬座","new_ticket_no":"EC893535212070004","price":"8.0","piaotype":"1","zwcode":"1","passportseno":"210711199307114414","old_ticket_no":"EC893535211020011","flagmsg":"改签成功","flagid":"100","cxin":"07车厢,004号"}],"priceinfotype":1,"to_station_name":"鸡西","partnerid":"anjiezhilv","help_info":"改签占座成功","transactionid":"T1707257274D5870127E04D5E08DA309C5930D7145F","priceinfo":"收取新票款：8.0元，退还原票款：1.0元","diffrate":"0","reqtime":"20170726084047","from_station_name":"鸡东","checi":"K7028","totalpricediff":1,"code":"100","msg":"改签占座成功","from_station_code":"JOB","sign":"f866f30a0900208ed0738e1eb9a9a154","fee":0,"arrive_time":"21:58","to_station_code":"JXB","train_date":"2017-08-23","refund_online":0,"start_time":"21:41","method":"train_request_change","orderid":"20170725171904128902_998","success":true}, action:changingCallback, format:null, controller:trainHtCallback]
-
-{"callbackurl":"http://api.beta.umicheng.com/umicheng/trainHtCallback/changedCallback","isasync":"Y","method":"train_confirm_change","orderid":"20170725171904128902_998","partnerid":"anjiezhilv","reqtime":"20170726084409","reqtoken":"99999999999","sign":"e6fd9f76913e5791f7336bdb46004fc9","transactionid":"T1707257274D5870127E04D5E08DA309C5930D7145F"}
-
-[backjson:{"sign":"3adac859a3aeb984206cb122dc74dee2","partnerid":"anjiezhilv","reqtoken":"99999999999","oldticketchangeserial":"","reqtime":"20170726084442","ticketpricediffchangeserial":"","newticketcxins":[{"new_ticket_no":"EC893535212070004","old_ticket_no":"EC893535211020011","cxin":"07车厢,004号"}],"method":"train_confirm_change","orderid":"20170725171904128902_998","newticketchangeserial":"","code":"100","msg":"确认改签成功","success":true}, action:changedCallback, format:null, controller:trainHtCallback]
-
-[data:{"timestamp":"1501030428","sign":"715e76f41f96b33c27942b75913f1351","reqtoken":"99999999999","returntickets":[{"returnsuccess":true,"returnfailid":"","passengername":"王博","ticket_no":"EC893535212070004","returnmoney":"6","returnfailmsg":"","passportseno":"210711199307114414","passporttypeseid":"1","returntime":"2017-07-26 08:53:48"}],"apiorderid":"20170725171904128902_998","token":"1501030428380","returnmoney":"6","changereqtoken":"99999999999","trainorderid":"EC89353521","returnmsg":"","returnstate":true,"returntype":"1"}, action:refundCallback, format:null, controller:trainHtCallback]
-
-[sign:3b73cf7ee7ca9504581e7aeb1b50183d, transactionid:T170726BC188F14023290414A080B30CF38D3E33945, reqtime:20170726105218524, isSuccess:Y, orderid:20170726104702129402_1002, action:bookedCallback, format:null, controller:trainHtCallback]
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
